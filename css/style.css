@@ -526,10 +526,10 @@ h1, h2, h3 {
     .nav-links {
         position: fixed;
         top: 0;
-        right: -150px; /* hide by default */
-        width: 150px;
+        right: -100px; /* hide by default */
+        width: 100px;
         height: 100vh;
-        background: white;
+        background: green;
         padding-top: 100px;
         display: flex;
         flex-direction: column;
