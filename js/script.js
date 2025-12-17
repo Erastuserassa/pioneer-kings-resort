@@ -386,3 +386,12 @@ if (bookingForm) {
         }
     });
 }
+const closeMenu = document.getElementById("closeMenu");
+
+closeMenu.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+
+    // reset hamburger icon
+    const icon = menuToggle.querySelector("i");
+    icon.classList.replace("fa-times", "fa-bars");
+});
