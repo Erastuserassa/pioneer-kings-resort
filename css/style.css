@@ -726,8 +726,8 @@ header {
     .nav-links {
         position: fixed;
         top: 0;
-        right: -300px; /* hidden by default */
-        width: 250px;
+        right: -200px; /* hidden by default */
+        width: 200px;
         height: 100vh;
         background: #fff; /* solid background */
         flex-direction: column;
@@ -752,6 +752,23 @@ header {
     }
 }
 
+.close-menu {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+/* Show X only on mobile */
+@media (max-width: 768px) {
+    .close-menu {
+        display: block;
+    }
+}
 
 /* Hero for Blog */
 .blog-hero {
