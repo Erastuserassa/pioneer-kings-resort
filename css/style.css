@@ -522,15 +522,41 @@ h1, h2, h3 {
     font-family: 'Playfair Display', serif;
     color: #004d40;
 }
-@media (max-width:768px) {
-    nav ul {
-        flex-direction: column;
-        display: none;
-    }
-    nav ul.active {
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -250px; /* hide by default */
+        width: 250px;
+        height: 100vh;
+        background: white;
+        padding-top: 100px;
         display: flex;
+        flex-direction: column;
+        gap: 20px;
+        box-shadow: -2px 0 10px rgba(0,0,0,0.15);
+        transition: 0.4s ease;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 28px;
+        color: #fff;
+    }
+
+    .nav-links a {
+        color: #333;
+        font-weight: 600;
+        padding: 10px 20px;
     }
 }
+
 .booking-hero {
     background: url('../images/resort2.jpg') center/cover no-repeat;
     color: #fff;
