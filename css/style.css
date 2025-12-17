@@ -770,6 +770,12 @@ header {
         display: block;
     }
 }
+@media (max-width: 768px) {
+    .nav-links {
+        right: -250px;   /* force hidden */
+    }
+}
+
 
 /* Hero for Blog */
 .blog-hero {
