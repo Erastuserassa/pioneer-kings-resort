@@ -502,6 +502,20 @@ html {
         border-radius: 50%;
     }
 }
+.nav-links {
+    animation: slideIn 0.4s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        right: -250px;
+        opacity: 0;
+    }
+    to {
+        right: 0;
+        opacity: 1;
+    }
+}
 
 .fade-in.visible {
     opacity: 1;
