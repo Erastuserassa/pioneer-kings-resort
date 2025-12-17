@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard | Pioneer Kings Resort</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <a href="index.html" class="logo-wrap">
+        <img src="images/logo.jpg" alt="Pioneer Kings Resort Logo">
+        <span>Pioneer Kings Resort</span>
+    </a>
+   <div style="display:flex;">
+    <button onclick="logout()" style="
+        margin-left:auto;
+        background:#c0392b;
+        color:#fff;
+        border:none;
+        padding:8px 14px;
+        border-radius:6px;
+        cursor:pointer;
+    ">
+    Logout
+    </button>
+</div>
+
+</header>
+
+<section class="dashboard">
+    <h1>Bookings Dashboard</h1>
+    <p class="subtitle">Manage and review all guest reservations</p>
+
+    <div class="card">
+        <table id="bookingsTable">
+            <thead>
+                <tr>
+                    <th>Guest Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Room Type</th>
+                    <th>Check-In</th>
+                    <th>Check-Out</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- JS inserts rows here -->
+
+            </tbody>
+        </table>
+
+        <div id="emptyState" class="empty" style="display:none;">
+            No bookings found.
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2025 Pioneer Kings Resort — Admin Panel
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
